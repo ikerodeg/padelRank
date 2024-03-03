@@ -1,0 +1,135 @@
+/* 
+font-family: 'Neucha', cursive;
+*/
+/* ----------------------- Variables ---------------------- */
+:root {
+  --mainTitleFntFmly:'Rubik Dirt', system-ui;
+  --mainFntFmly: 'Neucha', cursive;
+  --selectFntFamily: 'Dosis', sans-serif;
+  --txtsdw: 1px 1px 2px hsl(0, 0%, 0%);
+}
+
+/* -------------------------- HTML ------------------------- */
+
+html {
+  block-size: 100dvh;
+}
+
+/* -------------------------- Body ------------------------- */
+body {
+  font-family: var(--mainFntFmly);
+  background-color: hsla(0, 0%, 20%, 0.733);
+  background-image: url('../../assets/img/wallPaper_02.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ---------------------- Header ----------------------- */
+
+.main-header {
+  inline-size: 100%;
+  margin-block-end: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__title {
+  inline-size: fit-content;
+  padding-inline: 0.5em;
+  padding-block: 0.2em;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  color: hsl(0, 0%, 75%);
+  text-shadow: 0px 0px 3px hsl(16, 100%, 50%);
+}
+
+.main-header__links {
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  padding-inline: 1em;
+  padding-block: 0.2em;
+}
+
+.main-header__returnLink {
+  font-size: 2rem;
+  color: hsl(0, 0%, 75%);
+  text-shadow: 0px 0px 5px hsl(16, 100%, 50%);
+}
+
+/* ---------------------- MainContent ---------------------- */
+
+.mainContent {
+  inline-size: 90vw;
+  margin-inline: auto;
+}
+
+/* ------------------------ Tabla -------------------------- */
+
+.tabla-jugadores {
+  margin-inline: auto;
+  box-shadow: 0 0 0.3em hsla(22, 100%, 50%, 0.428);
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 25%, 0.909);
+}
+
+
+
+.tabla-jugadores th {
+  background-color: hsla(0, 0%, 0%, 0.484);
+  border-radius: 0.2em;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-block-start: 0.3em;
+  padding-inline: 0.3em;
+}
+
+.tabla-jugadores td {
+  font-size: 1.15rem;
+  border-radius: 0.2em;
+  padding-block-start: 0.5em;
+  padding-block-end: 0.2em;
+  padding-inline-start: 0.2em;
+  padding-inline-end: 0.2em;
+  background-color: hsla(0, 0%, 41%, 0.491);
+  text-shadow: 1px 1px 2px rgb(20, 20, 20);
+}
+
+
+.tabla-jugadores th {
+  text-align: center;
+}
+
+.tabla-jugadores td:not(:nth-child(2)) {
+  text-align: center;
+  padding-inline-start: 1vw;
+  padding-inline-end: 1vw;
+}
+
+.tabla-jugadores td:nth-child(2) {
+  padding-inline-start: 1vw;
+  padding-inline-end: 3vw;
+}
+
+.tabla-jugadores td:nth-child(3) {
+  color: rgb(194, 194, 194);
+}
+
+.tabla-jugadores td:first-child {
+  background-color: hsla(0, 0%, 69%, 0.35);
+  inline-size: fit-content;
+}
+.tabla-jugadores td:first-child::after{
+  position: relative;
+  content: 'º';
+}
+
+
+.tabla-jugadores td:nth-child(4) {
+  color: hsl(122, 100%, 74%);
+}
+
+.tabla-jugadores td:nth-child(5) {
+  color: hsl(0, 100%, 70%);
+}
+
