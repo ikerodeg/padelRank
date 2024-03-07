@@ -1,7 +1,5 @@
 # Padel Rank
 
-![Padel](https://example.com/padel-icon.png)
-
 Padel Rank es una plataforma innovadora que clasifica a los jugadores de pádel basándose en su rendimiento. Con Padel Rank, puedes seguir el crecimiento de tus habilidades, ver tu progreso y competir con otros jugadores.
 
 ## Características Principales
