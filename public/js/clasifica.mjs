@@ -40,7 +40,7 @@ JUGADORES_ARR.sort((a, b) => a.name.localeCompare(b.name))
 // Crea la tabla y rellena con jugadores
  function crearTablaJugadores(jugadores) {
   const tabla = document.getElementById('tabla-jugadores');
-  tabla.style.inline-size = '70vw';
+  tabla.style.inline-size = '65vw';
   let posicion = 1;
  
   // Calcula el nivel actual para cada jugador antes de ordenar
