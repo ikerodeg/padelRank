@@ -19,8 +19,9 @@ body {
   background-image: url('../../assets/img/wallPaper_10e.webp');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
+  background-clip: content-box;
 }
 
 /* ---------------------- Header ----------------------- */
@@ -60,7 +61,7 @@ body {
 footer {
   padding: 0.2em;
   border-radius: 0.3em;
-  inline-size: clamp(300px, 75vw, 600px);
+  inline-size: 70vw;
   margin-inline: auto;
   margin-block: 3em;
   background-color: hsla(0, 0%, 0%, 0.325);
@@ -76,6 +77,7 @@ footer p {
 /* ------------------------ Tabla -------------------------- */
 
 .tabla-jugadores {
+  max-width: 100%;
   margin-inline: auto;
   box-shadow: 0 0 0.3em hsla(22, 100%, 50%, 0.428);
   color: hsl(0, 0%, 100%);
@@ -88,7 +90,7 @@ footer p {
   font-size: 1.3rem;
   font-weight: 400;
   padding-block-start: 0.3em;
-  padding-inline: 0.3em;
+  padding-inline: 0.2em;
 }
 
 .tabla-jugadores td {
@@ -96,8 +98,7 @@ footer p {
   border-radius: 0.2em;
   padding-block-start: 0.5em;
   padding-block-end: 0.2em;
-  padding-inline-start: 0.2em;
-  padding-inline-end: 0.2em;
+  padding-inline: 0.1em;
   background-color: hsla(0, 0%, 41%, 0.491);
   text-shadow: 1px 1px 2px rgb(20, 20, 20);
 }
@@ -109,13 +110,11 @@ footer p {
 
 .tabla-jugadores td:not(:nth-child(2)) {
   text-align: center;
-  padding-inline-start: 1vw;
-  padding-inline-end: 1vw;
+  padding-inline-start: 0.1em;
 }
 
 .tabla-jugadores td:nth-child(2) {
-  padding-inline-start: 1vw;
-  padding-inline-end: 3vw;
+  padding-inline-start: 0.1em;
 }
 
 .tabla-jugadores td:nth-child(3) {
