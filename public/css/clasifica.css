@@ -125,11 +125,6 @@ footer p {
   background-color: hsla(0, 0%, 69%, 0.35);
   inline-size: fit-content;
 }
-.tabla-jugadores td:first-child::after{
-  position: relative;
-  content: 'º';
-}
-
 
 .tabla-jugadores td:nth-child(4) {
   color: hsl(122, 100%, 74%);
