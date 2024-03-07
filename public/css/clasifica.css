@@ -21,7 +21,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-clip: content-box;
+  /* background-clip: content-box; */
 }
 
 /* ---------------------- Header ----------------------- */
@@ -87,14 +87,14 @@ footer p {
 .tabla-jugadores th {
   background-color: hsla(0, 0%, 0%, 0.484);
   border-radius: 0.2em;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   padding-block-start: 0.3em;
   padding-inline: 0.2em;
 }
 
 .tabla-jugadores td {
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 0.2em;
   padding-block-start: 0.5em;
   padding-block-end: 0.2em;
