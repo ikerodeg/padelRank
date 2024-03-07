@@ -19,7 +19,7 @@ body {
   background-image: url('../../assets/img/wallPaper_10e.webp');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
 }
 
