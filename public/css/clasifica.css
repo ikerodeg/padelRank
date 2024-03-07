@@ -26,7 +26,7 @@ body {
 /* ---------------------- Header ----------------------- */
 
 .main-header {
-  inline-size: clamp(300px, 75vw, 600px);
+  inline-size: 70vw;
   margin-inline: auto;
   margin-block-end: 1vh;
   display: flex;
@@ -51,7 +51,7 @@ body {
 /* ---------------------- MainContent ---------------------- */
 
 .mainContent {
-  inline-size: clamp(300px, 75vw, 600px);
+  inline-size: 70vw;
   margin-inline: auto;
 }
 
