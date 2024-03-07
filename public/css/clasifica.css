@@ -56,6 +56,75 @@ body {
   margin-inline: auto;
 }
 
+/* ------------------------ Tabla -------------------------- */
+
+.tabla-jugadores {
+  max-width: 100%;
+  margin-inline: auto;
+  box-shadow: 0 0 0.3em hsla(22, 100%, 50%, 0.428);
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 25%, 0.909);
+  
+}
+
+.tabla-jugadores th {
+  background-color: hsla(0, 0%, 0%, 0.484);
+  border-radius: 0.2em;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-block-start: 0.3em;
+}
+
+.tabla-jugadores td {
+  border-radius: 0.2em;
+  padding-block-start: 0.5em;
+  padding-block-end: 0.2em;
+  background-color: hsla(0, 0%, 45%, 0.4);
+  text-shadow: 1px 1px 2px rgb(20, 20, 20);
+}
+
+
+.tabla-jugadores th {
+  text-align: center;
+}
+
+.tabla-jugadores td:not(:nth-child(1)) {
+  text-align: center;
+}
+
+.tabla-jugadores td:nth-child(2), td:nth-child(3) {
+  color: hsl(0, 0%, 76%);
+}
+
+.tabla-jugadores td:first-child {
+  background-color: hsla(0, 0%, 69%, 0.35);
+  inline-size: min-content;
+  padding-inline: 0.3em;
+  line-break: loose;
+}
+
+.tabla-jugadores td:nth-child(4) {
+  color: hsl(122, 100%, 74%);
+}
+
+.tabla-jugadores td:nth-child(5) {
+  color: hsl(0, 100%, 70%);
+}
+
+.tabla-jugadores td:nth-child(6) {
+  font-size: 0.8em;
+}
+
+/* ------------------ Botones tabla --------------- */
+button {
+  inline-size: 100%;
+  block-size: 100%;
+  background: linear-gradient(0deg, hsl(0, 0%, 13%) 36%, hsl(0, 0%, 28%) 81%, hsla(0, 0%, 100%, 0.554) 100%);
+  border: solid 0 hsla(0, 0%, 0%, 0.212);
+  color: beige;
+  cursor: pointer;
+}
+
 /* ---------------------- Footer ---------------------- */
 
 footer {
@@ -72,74 +141,4 @@ footer p {
   color: hsl(19, 100%, 50%);
   text-shadow: 1px 1px 1px black;
   text-align: center;
-}
-
-/* ------------------------ Tabla -------------------------- */
-
-.tabla-jugadores {
-  max-width: 100%;
-  margin-inline: auto;
-  box-shadow: 0 0 0.3em hsla(22, 100%, 50%, 0.428);
-  color: hsl(0, 0%, 100%);
-  background-color: hsla(0, 0%, 25%, 0.909);
-}
-
-.tabla-jugadores th {
-  background-color: hsla(0, 0%, 0%, 0.484);
-  border-radius: 0.2em;
-  font-size: 1.1rem;
-  font-weight: 400;
-  padding-block-start: 0.3em;
-  padding-inline: 0.1em;
-}
-
-.tabla-jugadores td {
-  font-size: 1rem;
-  border-radius: 0.2em;
-  padding-block-start: 0.5em;
-  padding-block-end: 0.2em;
-  padding-inline: 0.1em;
-  background-color: hsla(0, 0%, 41%, 0.491);
-  text-shadow: 1px 1px 2px rgb(20, 20, 20);
-}
-
-
-.tabla-jugadores th {
-  text-align: center;
-}
-
-.tabla-jugadores td:not(:nth-child(2)) {
-  text-align: center;
-  padding-inline-start: 0.1em;
-}
-
-.tabla-jugadores td:nth-child(2) {
-  padding-inline-start: 0.1em;
-}
-
-.tabla-jugadores td:nth-child(3) {
-  color: rgb(194, 194, 194);
-}
-
-.tabla-jugadores td:first-child {
-  background-color: hsla(0, 0%, 69%, 0.35);
-  inline-size: fit-content;
-}
-
-.tabla-jugadores td:nth-child(4) {
-  color: hsl(122, 100%, 74%);
-}
-
-.tabla-jugadores td:nth-child(5) {
-  color: hsl(0, 100%, 70%);
-}
-
-/* ------------------ Botones tabla --------------- */
-button {
-  inline-size: 100%;
-  block-size: 100%;
-  background: linear-gradient(0deg, hsl(0, 0%, 13%) 36%, hsl(0, 0%, 28%) 81%, hsla(0, 0%, 100%, 0.554) 100%);
-  border: solid 0 hsla(0, 0%, 0%, 0.212);
-  color: beige;
-  cursor: pointer;
 }
