@@ -1,15 +1,53 @@
 html {
   background-color: black;
-  color: coral;
 }
 
-a:link, a:visited{
-  color: crimson;
+a:link, a:visited, a:hover, a:active{
+  color: orangered;
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
+  text-decoration: none;
+  
 }
 
 .main-header  {
-
-  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  inline-size: clamp(300px, 70vw, 600px);
+  block-size: 30vh;
+  margin-inline: auto;
+  margin-block-start: 5vh;
+  margin-block-end: 10vh;
   text-align: center;
-  margin-block-start: 10vh;
+  background-image: url('../../assets/img/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.mainContent {
+  inline-size: clamp(300px, 70vw, 600px);
+  margin-inline: auto;
+}
+
+.section-links {
+  display: flex;
+  flex-direction: row;
+  margin-inline: auto;
+  block-size: 10vh;
+  padding-block: 2em;
+  border-radius: 0.3em;
+  background-color: hsla(0, 0%, 52%, 0.373);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.section-links a {
+  display: block;
+  inline-size: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
 }
