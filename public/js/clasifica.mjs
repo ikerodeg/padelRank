@@ -75,13 +75,24 @@ JUGADORES_ARR.sort((a, b) => a.name.localeCompare(b.name))
      `;
 
      // Aplica text-shadow verde si pg es igual o superior a 5
-    if (jugador.pg >= 5) {
-      fila.cells[3].style.textShadow = '0 0 5px green';
+    if (jugador.pg >= 10) {
+      fila.cells[3].style.textShadow = '0 0 2px green';
+      fila.cells[3].style.textShadow = '0 0 5px hsl(122, 100%, 74%)';
+      fila.cells[3].style.textShadow = '0 0 10px hsl(122, 100%, 74%)';
     }
 
     // Aplica text-shadow rojo si pp es igual o superior a 5
     if (jugador.pp >= 5) {
       fila.cells[4].style.textShadow = '0 0 5px red';
+    }
+    // Aplica text-shadow rojo si pj es igual a 0
+    if (jugador.pj == 0) {
+      fila.cells[2].style.textShadow = '0 0 5px red';
+    }
+
+    // Aplica text-shadow blanco si pj es mayor a 10
+    if (jugador.pj >= 10) {
+      fila.cells[2].style.textShadow = '0 0 5px grey';
     }
 
     //Aplica color segun porcentaje de victorias
