@@ -2,16 +2,16 @@ import { JUGADORES_ARR } from '../../data/mjs/jugadores.mjs';
 
 // Declarar colores por nivel
 const coloresPorNivel = {
-  '4.26-7.00': 'hsla(0, 100%, 50%, 0.3)',
-  '4.01-4.25': 'hsla(186, 100%, 50%, 0.35)',
-  '3.76-4.00': 'hsla(360, 100%, 50%, 0.3)',
-  '3.51-3.75': 'hsla(246, 55%, 50%, 0.4)',
-  '3.26-3.50': 'hsla(124, 100%, 50%, 0.2)',
-  '3.00-3.25': 'hsla(120, 100%, 50%, 0.1)',
-  '2.76-2.99': 'hsla(0, 0%, 90%, 0.3)',
-  '2.51-2.75': 'hsla(0, 0%, 50%, 0.3)',
-  '2.26-2.50': 'hsla(0, 0%, 20%, 0.4)',
-  '2.00-2.25': 'hsla(0, 0%, 0%, 0.3)',
+  '4.25-7.00': 'hsla(0, 100%, 50%, 0.3)',
+  '4.00-4.24': 'hsla(186, 100%, 50%, 0.35)',
+  '3.75-3.99': 'hsla(360, 100%, 50%, 0.3)',
+  '3.50-3.74': 'hsla(246, 55%, 50%, 0.4)',
+  '3.25-3.49': 'hsla(124, 100%, 50%, 0.2)',
+  '3.00-3.24': 'hsla(120, 100%, 50%, 0.1)',
+  '2.75-2.99': 'hsla(0, 0%, 90%, 0.3)',
+  '2.50-2.74': 'hsla(0, 0%, 50%, 0.3)',
+  '2.25-2.49': 'hsla(0, 0%, 20%, 0.4)',
+  '2.00-2.24': 'hsla(0, 0%, 0%, 0.3)',
 };
 
 // Cambia colores de celda por Nivel
@@ -63,6 +63,7 @@ JUGADORES_ARR.sort((a, b) => a.name.localeCompare(b.name))
 
   // Recorre los jugadores y los agrega a la tabla:
   jugadores.forEach(jugador => {
+    if (jugador.pj != 0) {
      const fila = document.createElement('tr');
      fila.innerHTML = `
        <td>${jugador.name}</td>
@@ -122,6 +123,7 @@ JUGADORES_ARR.sort((a, b) => a.name.localeCompare(b.name))
      tabla.tBodies[0].appendChild(fila);
      posicion++;
      cambiarFondoPorNivel(fila);
+    };
   });
 }
 
