@@ -120,6 +120,7 @@ const JUGADORES_ARR = [
   {name: 'Marc Santos', level_init: 3.00, pg: 0, pp: 2, level_act: ''},
   {name: 'Marcela Rotaru', level_init: 2.75, pg: 0, pp: 3, level_act: ''},
   {name: 'Maria Pilar Lopez', level_init: 3.25, pg: 0, pp: 0, level_act: ''},
+  {name: 'Marta Beri', level_init: 2.25, pg: 0, pp: 0, level_act: ''},
   {name: 'Marina Andión', level_init: 2.75, pg: 0, pp: 1, level_act: ''},
   {name: 'Martina Gallar', level_init: 2.50, pg: 0, pp: 1, level_act: ''},
   {name: 'Melisa Roselló', level_init: 2.75, pg: 0, pp: 0, level_act: ''},
