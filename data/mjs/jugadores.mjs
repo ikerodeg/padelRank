@@ -57,6 +57,7 @@ const JUGADORES_ARR = [
   {name: 'David Segarra', level_init: 3.00, pg: 2, pp: 0, level_act: ''},
   {name: 'Diego Carrillo', level_init: 2.75, pg: 0, pp: 2, level_act: ''},
   {name: 'Diego Cuevas', level_init: 3.00, pg: 0, pp: 0, level_act: ''},
+  {name: 'Elisabeth Breva', level_init: 2.25, pg: 0, pp: 0, level_act: ''},
   {name: 'Ege Urel', level_init: 2.50, pg: 1, pp: 0, level_act: ''},
   {name: 'Enrique Esteban', level_init: 3.25, pg: 1, pp: 3, level_act: ''},
   {name: 'Erwin Bir', level_init: 3.00, pg: 0, pp: 1, level_act: ''},
