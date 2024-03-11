@@ -166,7 +166,7 @@ const JUGADORES_ARR = [
   {name: 'Roberto Portolés', level_init: 3.75, pg: 1, pp: 0, level_act: ''},
   {name: 'Salvador Úbeda', level_init: 3.00, pg: 3, pp: 0, level_act: ''},
   {name: 'Santiago Vilanova', level_init: 3.25, pg: 0, pp: 0, level_act: ''},
-  {name: 'Santos Colomer', level_init: 3.50, pg: 2, pp: 1, level_act: ''},
+  {name: 'Santos Colomer', level_init: 3.50, pg: 3, pp: 1, level_act: ''},
   {name: 'Sara Miñana', level_init: 3.00, pg: 1, pp: 1, level_act: ''},
   {name: 'Sergio Gellida Álvarez', level_init: 2.50, pg: 2, pp: 0, level_act: ''},
   {name: 'Sergio Sanbart', level_init: 3.00, pg: 0, pp: 0, level_act: ''},
