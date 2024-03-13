@@ -13,7 +13,6 @@ font-family: 'Neucha', cursive;
 
 /* -------------------------- Body ------------------------- */
 body {
-  /* inline-size: 80vw; */
   font-family: var(--mainFntFmly);
   background-color: hsla(0, 0%, 20%, 0.733);
   background-image: url('../../assets/img/wallPaper_10e.webp');
@@ -21,13 +20,11 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  /* background-clip: content-box; */
 }
 
 /* ---------------------- Header ----------------------- */
 
 .main-header {
-  max-inline-size: 60vw;
   margin-inline: auto;
   margin-block-end: 1vh;
   display: flex;
@@ -36,7 +33,8 @@ body {
 }
 
 .main-header__title {
-  inline-size: 100%;
+  inline-size: 64%;
+  max-inline-size: 770px;
   margin-inline: auto;
   margin-block-end: 0;
   padding-inline: 0.5em;
@@ -52,7 +50,6 @@ body {
 /* ---------------------- MainContent ---------------------- */
 
 .mainContent {
-  inline-size: 70vw;
   margin-inline: auto;
 }
 
@@ -65,7 +62,6 @@ body {
   box-shadow: 0 0 0.3em hsla(22, 100%, 50%, 0.428);
   color: hsl(0, 0%, 100%);
   background-color: hsla(0, 0%, 25%, 0.909);
-  
 }
 
 .tabla-jugadores th {
@@ -132,14 +128,45 @@ footer {
   padding: 0.2em;
   border-radius: 0.3em;
   inline-size: 70vw;
+  max-inline-size: 800px;
   margin-inline: auto;
   margin-block: 3em;
-  background-color: hsla(0, 0%, 0%, 0.325);
+  background-color: hsla(0, 0%, 0%, 0.7);
 }
 
 footer p {
   inline-size: 100%;
   color: hsl(19, 100%, 50%);
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0 0 1px white;
   text-align: center;
+}
+
+.mainContent {
+  container-type: inline-size;
+}
+
+@container (inline-size >= 400px) {
+  .tabla-jugadores {
+    inline-size: max-content;
+  }
+}
+
+@container (inline-size >= 450px) {
+  .tabla-jugadores {
+    margin-block-start: 3vh;
+    inline-size: 70%;
+    max-inline-size: 800px;
+
+    
+    td {
+      font-size: clamp(0.9rem, 1.5vw, 2.5rem);
+      padding-inline: 0.5em;
+    }
+
+    th {
+      font-size: clamp(1rem, 1.7vw, 2.8rem);
+      padding-block: 0;
+    }
+  }
+ 
 }
