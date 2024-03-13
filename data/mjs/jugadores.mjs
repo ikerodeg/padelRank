@@ -117,7 +117,7 @@ const JUGADORES_ARR = [
   {name: 'Luis Martín', level_init: 3.25, pg: 4, pp: 1, level_act: ''},
   {name: 'Luis Mestre', level_init: 3.75, pg: 0, pp: 0, level_act: ''},
   {name: 'Luisana Diaz', level_init: 3.75, pg: 0, pp: 0, level_act: ''},
-  {name: 'Manuel Mtz. Beltrán', level_init: 3.00, pg: 1, pp: 1, level_act: ''},
+  {name: 'Manuel Mtz. Beltrán', level_init: 2.75, pg: 1, pp: 1, level_act: ''},
   {name: 'Marc Santos', level_init: 3.00, pg: 0, pp: 2, level_act: ''},
   {name: 'Marcela Rotaru', level_init: 2.75, pg: 0, pp: 3, level_act: ''},
   {name: 'Maria Pilar Lopez', level_init: 3.25, pg: 0, pp: 0, level_act: ''},
