@@ -149,7 +149,7 @@ const JUGADORES_ARR = [
   {name: 'Olivier Petit', level_init: 3.00, pg: 0, pp: 0, level_act: ''},
   {name: 'Oscar Baeza Segoviano', level_init: 3.00, pg: 1, pp: 1, level_act: ''},
   {name: 'Pablo Barrue', level_init: 2.50, pg: 0, pp: 0, level_act: ''},
-  {name: 'Pablo Esparza', level_init: 3.50, pg: 3, pp: 2, level_act: ''},
+  {name: 'Pablo Esparza', level_init: 3.50, pg: 4, pp: 2, level_act: ''},
   {name: 'Pablo Quinteros', level_init: 2.50, pg: 0, pp: 0, level_act: ''},
   {name: 'Pablo Sevilla', level_init: 3.00, pg: 0, pp: 1, level_act: ''},
   {name: 'Pablo Valls', level_init: 3.25, pg: 2, pp: 1, level_act: ''},
